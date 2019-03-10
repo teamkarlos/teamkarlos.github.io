@@ -148,6 +148,12 @@ section{
     font-size: 18px;
 }
 
+.about-info .vision{
+    color: red;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
 .about-info .downloadbtn{
     display: inline-block;
     padding: 15px 35px;
