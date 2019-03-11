@@ -31,8 +31,8 @@ footer, header, hgroup, menu, nav, section {
 html,body {
     height: 100%;
     line-height: 1;
-    color: #ffffff;
-    background-color: #000000;
+    color: black;
+    background-color: white;
     font-family: 'Karla', sans-serif;
 }
 ol, ul {
@@ -53,6 +53,8 @@ table {
 
 /* header style */
 header {
+    background: black;
+    opacity: .4;
     position: absolute;
     top: 0;
     left: 0;
@@ -63,11 +65,33 @@ header {
 }
 
 header ul li a{
-    color: #ffffff;
+    color: #373737;
     text-transform: uppercase;
     text-decoration: none;
     margin: 0 40px;
     visibility: hidden;
+}
+i{
+    color: #373737;
+}
+
+a:link {
+    color: #C0B283;
+}
+
+/* A link that has been visited */
+a:visited {
+    color: #C0B283;
+}
+
+/* A link that is hovered on */
+a:hover {
+    color: #DCD0C0;
+}
+
+/* A link that is selected */
+a:active {
+    color: #f4f4f4;
 }
 
 /* header sticky style */
@@ -75,7 +99,7 @@ header ul li a{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #000000;
+    background-color: white;
     z-index: 999;
 }
 
@@ -87,31 +111,34 @@ section{
 
 /* home section style */
 .home{
-    color: #ffffff;
-    padding: 0;
-    text-align: center;
+    color: goldenrod;
+    padding: 100px 0;
+    text-align: left;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    background: url(images/about.jpg) no-repeat;
+    align-items: flex-start;
+    background: url(images/image.png) no-repeat;
     background-size: cover;
-    background-position: center;
-    background-color: #34495e;
+    background-position: right;
+    background-color: #f4f4f4;
     background-attachment: fixed;
     z-index: 9;
 }
 
+
 .home h1{
-    font-size: 68px;
+    font-size: 64px;
+    font-weight: bold;
     text-transform: uppercase;
-    text-shadow: 0 15px 20px #000000b0;
+    text-shadow: 0 15px 20px #373737;
     margin-bottom: 0;
     visibility: hidden;
 }
 
 .home h5{
-    background: #000;
-    font-size: 18px;
+    background: transparent;
+    font-size: 16px;
+    font-style: italic;
     text-align: center;
     padding: 10px 20px;
     margin: 10px 0 50px;
@@ -124,6 +151,7 @@ section{
 /* section title style */
 .section-title{
     text-align: center;
+    color: #373737;
 }
 
 .section-title h2{
@@ -135,8 +163,13 @@ section{
 }
 
 /* about section style */
+.about{
+    background: #F4F4F4;
+}
+
 .about-info{
-    width: 60%;
+    color: #373737;
+    width: 80%;
     margin: 0 auto;
     padding: 50px 0;
     text-align: center;
@@ -144,23 +177,28 @@ section{
 }
 
 .about-info p{
+    color: #373737;
     line-height: 28px;
     font-size: 18px;
 }
 
 .about-info .vision{
-    color: red;
+    color: #C0B283;
     font-size: 30px;
     margin-bottom: 10px;
+}
+
+.about-info span{
+    font-weight: bold;
 }
 
 .about-info .downloadbtn{
     display: inline-block;
     padding: 15px 35px;
-    background-color: #ffffff10;
-    border: 1px solid #ffffff30;
+    background-color: #DCD0C0;
+    border: 1px solid #737373;
     border-radius: 50px;
-    color: #ffffff;
+    color: #C0B283;
     font-size: 18px;
     text-transform: uppercase;
     text-decoration: none;
@@ -177,7 +215,7 @@ section{
 .timeline .col{
     margin: 5px;
     padding: 25px 5px;
-    border: 1px solid #ffffff30;
+    border: 1px solid #DCD0C0;
     float: left;
 }
 
@@ -189,23 +227,26 @@ section{
 
 /* Projects section style */
 .projects{
-    width: 60%;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
     padding: 50px 0;
     text-align: center;
     z-index: 99;
+    background-color: #F4F4F4
 }
 
 .projects .projects-info{
     display: flex;
     flex-wrap: wrap;
-    margin: 50px 0;
+    margin: 25px;
 }
 
 .projects .col{
     width: 40%;
-    margin: 25px 30px;
+    margin: 25px 50px;
     text-align: center;
+    color: #373737;
 }
 
 .projects .col img{
@@ -216,59 +257,96 @@ section{
     margin-top: 10px;
     font-size: 28px;
     margin-bottom: 15px;
+    color: #C0B283;
 }
 
 .service .col p{
     line-height: 28px;
 }
 
+
+.projects .section-footnote{
+    text-align: center;
+    color: #373737;
+    margin: 20px auto;
+    text-align: center;
+    z-index: 99;
+    background-color: #F4F4F4;
+    font-size: 28px;
+}
+
 /* hobbies section style */
 .hobbies{
-    width: 60%;
+    height: 80%;
+    width: 100%;
     margin: 0 auto;
     padding: 50px 0;
     z-index: 99;
+    background-color: #F4F4F4;
 }
 
 .hobbies-info{
     display: flex;
     flex-wrap: wrap;
-    margin: 50px 0;
+    margin: 25px 0 0 80px;
 }
 
 .hobbies-info .col{
-    float: left;
-    width: 30%;
+    text-align: center;
+    float: right;
+    width: 20%;
     margin: 1%;
+}
+
+.hobbies .col h3{
+    margin-top: 10px;
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #C0B283;
 }
 
 .hobbies-info .col img{
     max-width: 100%;
 }
 
+/* contact section style */
 .contact{
-    width: 60%;
+    width: 100%;
+    height: 40%;
     margin: 0 auto;
     padding: 50px 0;
     z-index: 99;
+    background: #F4F4F4;
 }
 
 .contact-info{
     display: flex;
     justify-content: center;
-    margin: 50px 0;
+    margin: 25px;
+}
+
+.contact-info .col{ 
+    text-align: center;
+    float: right;
+    width: 20%;
+    margin: 1%;
+}
+
+.contact-info .col .p{
+    line-height: 28px;
+    color: #737373;
 }
 
 .contact-info .textField{
     width: 100%;
     height: 50px;
-    border: 1px solid #fff;
+    border: 1px solid #DCD0C0;
     box-sizing: border-box;
     background-color: transparent;
     padding: 15px 15px;
     margin-bottom: 15px;
     font-family: 'Karla', sans-serif; 
-    color: #fff;
+    color: #373737;
     font-size: 16px;
 }
 
@@ -277,8 +355,8 @@ section{
 }
 
 .contact-info .submitButton{
-    background-color: #fff;
-    color: #000;
+    background-color: #DCD0C0;
+    color: #373737;
     height: 50px;
     font-weight: 600;
     font-size: 16px;
