@@ -118,7 +118,7 @@ section{
     justify-content: center;
     align-items: flex-start;
     background: url(images/image.png) no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: right;
     background-color: #f4f4f4;
     background-attachment: fixed;
