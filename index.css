@@ -118,11 +118,11 @@ section{
     justify-content: center;
     align-items: flex-start;
     background: url(images/image.png) no-repeat;
-    -webkit-background-size: cover; 
-    -moz-background-size: cover; 
-    background-size: cover; 
-    -o-background-size: cover; 
-    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% center;
+    background-attachment: fixed;
+    /* background-position: right; */
     background-color: #f4f4f4;
     background-attachment: fixed;
     z-index: 9;
